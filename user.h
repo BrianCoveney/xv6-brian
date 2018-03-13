@@ -23,7 +23,8 @@ int getpid(void);
 char* sbrk(int);
 int sleep(int);
 int uptime(void);
-int trace(int x); // Question 3
+int trace(int x);           // Question 3
+int getptable(int, void *); // Question 4
 
 // ulib.c
 int stat(char*, struct stat*);

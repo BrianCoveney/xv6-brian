@@ -32,6 +32,11 @@ cpuid() {
   return mycpu()-cpus;
 }
 
+// Question 4
+struct proc * getptable_proc(void){
+  return ptable.proc;
+}
+
 // Must be called with interrupts disabled to avoid the caller being
 // rescheduled between reading lapicid and running through the loop.
 struct cpu*

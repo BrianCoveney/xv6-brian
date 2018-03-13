@@ -103,7 +103,8 @@ extern int sys_unlink(void);
 extern int sys_wait(void);
 extern int sys_write(void);
 extern int sys_uptime(void);
-extern int sys_trace(void);  // Question 2
+extern int sys_trace(void);     // Question 2
+extern int sys_getptable(void); // Question 4
 
 static int (*syscalls[])(void) = {
 [SYS_fork]    sys_fork,
@@ -127,7 +128,8 @@ static int (*syscalls[])(void) = {
 [SYS_link]    sys_link,
 [SYS_mkdir]   sys_mkdir,
 [SYS_close]   sys_close,
-[SYS_trace]   sys_trace,  // Question 3
+[SYS_trace]   sys_trace,        // Question 3
+[SYS_getptable] sys_getptable,  // Question 4
 };
 
 // Question 3
